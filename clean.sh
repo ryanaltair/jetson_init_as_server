@@ -19,7 +19,7 @@ uninstall_desktop_packages() {
   apt-get remove -y libreoffice-core snapd lightdm cups chromium* libcurlpp0
   apt-get update
   apt-get install -y network-manager
-  apt-get autoremove
+  apt-get autoremove -y
 }
 remove_files() {
   chown root:root / /lib
