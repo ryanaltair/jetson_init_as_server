@@ -41,8 +41,6 @@ remove_files() {
   rm -rf /usr/src/*
 }
 
-
-set -e
 if [ `whoami` = "root" ];then
   set_boot_to_no_desktop
   uninstall_desktop_packages
